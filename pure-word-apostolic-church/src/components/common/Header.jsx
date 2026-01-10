@@ -15,7 +15,7 @@ const Header = ({ sidebarOpen, setSidebarOpen }) => {
           </div>
           <div className="logo-text">
             <h1>Pure Word Apostolic Church</h1>
-            <p className="location">Ogembo Town, Kisii, Kenya • Est. {currentYear - 10}</p>
+            <p className="initials">(P.W.A)</p>
           </div>
         </div>
 

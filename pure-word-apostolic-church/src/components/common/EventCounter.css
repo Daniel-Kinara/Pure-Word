@@ -1,0 +1,155 @@
+.event-counter {
+  background: var(--white);
+  border-radius: var(--border-radius);
+  padding: 2rem;
+  text-align: center;
+  box-shadow: var(--shadow);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.counter-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+  color: var(--primary-color);
+}
+
+.counter-header svg {
+  font-size: 1.5rem;
+  color: var(--secondary-color);
+}
+
+.counter-header h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.no-events-message {
+  padding: 2rem;
+  color: var(--text-light);
+}
+
+.no-events-message p {
+  font-size: 1.1rem;
+}
+
+.next-event-details {
+  margin-bottom: 2rem;
+}
+
+.next-event-details h4 {
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+  line-height: 1.4;
+}
+
+.event-date {
+  color: var(--secondary-color);
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+  font-size: 0.95rem;
+}
+
+.event-time {
+  color: var(--text-light);
+  font-size: 0.9rem;
+}
+
+.countdown-timer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.countdown-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 70px;
+}
+
+.countdown-value {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--secondary-color);
+  line-height: 1;
+  margin-bottom: 0.25rem;
+  font-family: 'Courier New', monospace;
+}
+
+.countdown-label {
+  font-size: 0.85rem;
+  color: var(--text-light);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.countdown-separator {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--primary-color);
+  margin-top: -1rem;
+}
+
+.counter-footer {
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid #f0f0f0;
+}
+
+.counter-footer p {
+  color: var(--text-light);
+  font-size: 0.9rem;
+  font-style: italic;
+}
+
+@media (max-width: 768px) {
+  .event-counter {
+    padding: 1.5rem;
+  }
+  
+  .countdown-timer {
+    gap: 0.25rem;
+  }
+  
+  .countdown-item {
+    min-width: 60px;
+  }
+  
+  .countdown-value {
+    font-size: 2rem;
+  }
+  
+  .countdown-separator {
+    font-size: 1.2rem;
+    margin-top: -0.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .countdown-timer {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  
+  .countdown-item {
+    min-width: 45px;
+  }
+  
+  .countdown-value {
+    font-size: 1.5rem;
+  }
+  
+  .countdown-separator {
+    display: none;
+  }
+  
+  .countdown-item:nth-child(2n) .countdown-separator {
+    display: block;
+  }
+}

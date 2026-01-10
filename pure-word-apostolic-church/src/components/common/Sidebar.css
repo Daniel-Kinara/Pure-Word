@@ -1,0 +1,188 @@
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -320px;
+  width: 320px;
+  height: 100vh;
+  background: linear-gradient(180deg, var(--primary-color), var(--dark-color));
+  color: var(--white);
+  z-index: 1100;
+  transition: var(--transition);
+  display: flex;
+  flex-direction: column;
+  box-shadow: 5px 0 25px rgba(0, 0, 0, 0.2);
+}
+
+.sidebar.open {
+  left: 0;
+}
+
+.sidebar-header {
+  padding: 1.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sidebar-logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.sidebar-logo svg {
+  font-size: 2.5rem;
+  color: var(--secondary-color);
+  background: var(--white);
+  padding: 0.5rem;
+  border-radius: 50%;
+}
+
+.sidebar-logo h2 {
+  font-size: 1.2rem;
+  margin-bottom: 0.25rem;
+}
+
+.sidebar-logo p {
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+.sidebar-close {
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  color: var(--white);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 1.5rem;
+  transition: var(--transition);
+}
+
+.sidebar-close:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: rotate(90deg);
+}
+
+.sidebar-nav {
+  flex: 1;
+  padding: 1.5rem;
+  overflow-y: auto;
+}
+
+.sidebar-link {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: var(--white);
+  text-decoration: none;
+  padding: 1rem;
+  border-radius: var(--border-radius);
+  margin-bottom: 0.5rem;
+  transition: var(--transition);
+  font-weight: 500;
+}
+
+.sidebar-link:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: translateX(5px);
+}
+
+.sidebar-link svg {
+  font-size: 1.2rem;
+  opacity: 0.8;
+}
+
+.sidebar-group {
+  margin: 1.5rem 0;
+}
+
+.sidebar-group-title {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.75rem 1rem;
+  font-weight: 600;
+  color: var(--secondary-color);
+  border-left: 3px solid var(--secondary-color);
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.sidebar-group .sidebar-link {
+  padding-left: 2.5rem;
+  font-size: 0.9rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.admin-link {
+  margin-top: 2rem;
+  background: rgba(231, 76, 60, 0.1);
+  border: 1px solid rgba(231, 76, 60, 0.3);
+}
+
+.admin-link:hover {
+  background: rgba(231, 76, 60, 0.2);
+}
+
+.sidebar-footer {
+  padding: 1.5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.service-times,
+.prayer-times {
+  margin-bottom: 1rem;
+}
+
+.sidebar-footer h4 {
+  color: var(--secondary-color);
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.sidebar-footer p {
+  font-size: 0.85rem;
+  opacity: 0.9;
+  padding-left: 1.5rem;
+  margin-bottom: 0.25rem;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1050;
+  display: none;
+  backdrop-filter: blur(3px);
+}
+
+.overlay.active {
+  display: block;
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@media (max-width: 480px) {
+  .sidebar {
+    width: 280px;
+    left: -280px;
+  }
+}

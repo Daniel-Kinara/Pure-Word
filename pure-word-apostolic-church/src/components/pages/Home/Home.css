@@ -1,0 +1,625 @@
+/* Home Page Styles */
+.home-page {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  padding: 1rem 0;
+}
+
+/* Welcome Section */
+.welcome-section {
+  background: linear-gradient(135deg, var(--primary-color), var(--dark-color));
+  color: var(--white);
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  position: relative;
+  min-height: 500px;
+}
+
+/* Events Section */
+.events-section {
+  background: var(--white);
+  border-radius: var(--border-radius);
+  padding: 3rem;
+  box-shadow: var(--shadow);
+}
+
+/* Ministries Section */
+.ministries-section {
+  background: var(--white);
+  border-radius: var(--border-radius);
+  padding: 3rem;
+  box-shadow: var(--shadow);
+}
+
+/* Quick Info Section */
+.quick-info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.info-card {
+  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+  padding: 2.5rem 2rem;
+  border-radius: var(--border-radius);
+  text-align: center;
+  transition: var(--transition);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.info-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+  border-color: var(--secondary-color);
+}
+
+.info-icon {
+  font-size: 3rem;
+  color: var(--secondary-color);
+  margin-bottom: 1.5rem;
+  background: var(--white);
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.info-card h3 {
+  color: var(--primary-color);
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.info-card p {
+  color: var(--text-light);
+  margin-bottom: 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.info-card .btn-text {
+  margin-top: 1rem;
+  color: var(--secondary-color);
+  font-weight: 600;
+  text-decoration: none;
+  transition: var(--transition);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.info-card .btn-text:hover {
+  color: var(--primary-color);
+  transform: translateX(5px);
+}
+
+/* Section Headers */
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+.section-header h2 {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: var(--primary-color);
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.section-header .see-all {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--secondary-color);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: var(--transition);
+}
+
+.section-header .see-all:hover {
+  gap: 0.75rem;
+  color: var(--primary-color);
+}
+
+/* Event Counter Styles */
+.event-counter {
+  background: linear-gradient(135deg, var(--primary-color), var(--dark-color));
+  color: var(--white);
+  padding: 2.5rem;
+  border-radius: var(--border-radius);
+  text-align: center;
+  margin-bottom: 2.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.counter-number {
+  font-size: 4rem;
+  font-weight: bold;
+  color: var(--secondary-color);
+  margin: 1rem 0;
+  line-height: 1;
+  font-family: 'Courier New', monospace;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.events-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.event-card {
+  background: var(--white);
+  border-radius: var(--border-radius);
+  padding: 2rem;
+  box-shadow: var(--shadow);
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  border: 1px solid #e9ecef;
+  transition: var(--transition);
+}
+
+.event-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+  border-color: var(--secondary-color);
+}
+
+.event-date {
+  background: var(--secondary-color);
+  color: var(--white);
+  padding: 1.5rem;
+  border-radius: var(--border-radius);
+  text-align: center;
+  min-width: 90px;
+  box-shadow: 0 5px 15px rgba(52, 152, 219, 0.3);
+}
+
+.event-date .day {
+  font-size: 2rem;
+  font-weight: bold;
+  display: block;
+  line-height: 1;
+}
+
+.event-date .month {
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: 0.5rem;
+  display: block;
+}
+
+.event-details {
+  flex: 1;
+}
+
+.event-details h3 {
+  color: var(--primary-color);
+  margin-bottom: 0.75rem;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.event-details p {
+  color: var(--text-light);
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Ministries Grid */
+.ministries-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2.5rem;
+  margin: 3rem 0;
+}
+
+.ministry-card {
+  background: var(--white);
+  border-radius: var(--border-radius);
+  padding: 2.5rem 2rem;
+  box-shadow: var(--shadow);
+  text-align: center;
+  transition: var(--transition);
+  border: 1px solid #e9ecef;
+  position: relative;
+  overflow: hidden;
+}
+
+.ministry-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, var(--secondary-color), var(--accent-color));
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.5s ease;
+}
+
+.ministry-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+}
+
+.ministry-card:hover::before {
+  transform: scaleX(1);
+}
+
+.ministry-icon {
+  font-size: 3rem;
+  color: var(--secondary-color);
+  margin-bottom: 1.5rem;
+  background: rgba(52, 152, 219, 0.1);
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  transition: var(--transition);
+}
+
+.ministry-card:hover .ministry-icon {
+  background: var(--secondary-color);
+  color: var(--white);
+  transform: rotate(15deg) scale(1.1);
+}
+
+.ministry-card h3 {
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.ministry-description {
+  color: var(--text-light);
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  font-size: 0.95rem;
+}
+
+.ministry-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  color: var(--secondary-color);
+  text-decoration: none;
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  border: 2px solid var(--secondary-color);
+  border-radius: 50px;
+  transition: var(--transition);
+  font-size: 0.95rem;
+}
+
+.ministry-link:hover {
+  background: var(--secondary-color);
+  color: var(--white);
+  gap: 0.75rem;
+}
+
+.section-footer {
+  text-align: center;
+  padding-top: 2rem;
+  margin-top: 2rem;
+  border-top: 2px solid #f0f0f0;
+}
+
+/* Call to Action Sections */
+.cta-section {
+  text-align: center;
+  padding: 4rem;
+  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+  border-radius: var(--border-radius);
+  margin: 2rem 0;
+}
+
+.cta-section h2 {
+  color: var(--primary-color);
+  margin-bottom: 1.5rem;
+  font-size: 2.2rem;
+}
+
+.cta-section p {
+  color: var(--text-light);
+  max-width: 700px;
+  margin: 0 auto 2.5rem;
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .ministries-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 992px) {
+  .home-page {
+    gap: 3rem;
+  }
+  
+  .events-section,
+  .ministries-section {
+    padding: 2rem;
+  }
+  
+  .quick-info {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .ministries-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+  
+  .event-card {
+    flex-direction: column;
+    text-align: center;
+    padding: 1.5rem;
+  }
+  
+  .event-date {
+    width: 100%;
+    max-width: 200px;
+  }
+  
+  .section-header {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 768px) {
+  .home-page {
+    gap: 2rem;
+  }
+  
+  .quick-info {
+    grid-template-columns: 1fr;
+  }
+  
+  .ministries-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .events-list {
+    grid-template-columns: 1fr;
+  }
+  
+  .cta-section {
+    padding: 3rem 2rem;
+  }
+  
+  .cta-section h2 {
+    font-size: 1.8rem;
+  }
+  
+  .info-card {
+    padding: 2rem 1.5rem;
+  }
+  
+  .info-icon {
+    width: 70px;
+    height: 70px;
+    font-size: 2.5rem;
+  }
+  
+  .section-header h2 {
+    font-size: 1.6rem;
+  }
+  
+  .counter-number {
+    font-size: 3rem;
+  }
+  
+  .event-date .day {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .home-page {
+    gap: 1.5rem;
+  }
+  
+  .events-section,
+  .ministries-section {
+    padding: 1.5rem;
+  }
+  
+  .cta-section {
+    padding: 2rem 1.5rem;
+  }
+  
+  .cta-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .btn-primary,
+  .btn-secondary {
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .info-card h3 {
+    font-size: 1.3rem;
+  }
+  
+  .ministry-card {
+    padding: 2rem 1.5rem;
+  }
+  
+  .ministry-icon {
+    width: 70px;
+    height: 70px;
+    font-size: 2.5rem;
+  }
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.home-page > * {
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+.home-page > *:nth-child(1) { animation-delay: 0.1s; }
+.home-page > *:nth-child(2) { animation-delay: 0.2s; }
+.home-page > *:nth-child(3) { animation-delay: 0.3s; }
+.home-page > *:nth-child(4) { animation-delay: 0.4s; }
+
+/* Loading States */
+.loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 300px;
+  background: #f8f9fa;
+  border-radius: var(--border-radius);
+}
+
+.loading::after {
+  content: '';
+  width: 40px;
+  height: 40px;
+  border: 3px solid #e9ecef;
+  border-top-color: var(--secondary-color);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* Empty States */
+.empty-state {
+  text-align: center;
+  padding: 4rem 2rem;
+  color: var(--text-light);
+}
+
+.empty-state-icon {
+  font-size: 3rem;
+  color: #e9ecef;
+  margin-bottom: 1rem;
+}
+
+.empty-state h3 {
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+}
+
+/* Accessibility Improvements */
+@media (prefers-reduced-motion: reduce) {
+  .home-page > *,
+  .event-card,
+  .ministry-card,
+  .info-card,
+  .ministry-icon,
+  .ministry-link,
+  .section-header .see-all,
+  .info-card .btn-text {
+    animation: none;
+    transition: none;
+  }
+}
+
+/* Focus States */
+.event-card:focus,
+.ministry-card:focus,
+.info-card:focus,
+.ministry-link:focus,
+.section-header .see-all:focus {
+  outline: 2px solid var(--secondary-color);
+  outline-offset: 2px;
+}
+
+/* Dark Mode Support (Optional) */
+@media (prefers-color-scheme: dark) {
+  .home-page {
+    background: #1a1a1a;
+    color: #ffffff;
+  }
+  
+  .events-section,
+  .ministries-section,
+  .event-card,
+  .ministry-card,
+  .info-card {
+    background: #2d2d2d;
+    color: #ffffff;
+    border-color: #404040;
+  }
+  
+  .info-card {
+    background: linear-gradient(135deg, #2d2d2d, #404040);
+  }
+  
+  .cta-section {
+    background: linear-gradient(135deg, #2d2d2d, #404040);
+  }
+  
+  .event-details h3,
+  .ministry-card h3,
+  .info-card h3,
+  .section-header h2 {
+    color: #ffffff;
+  }
+  
+  .event-details p,
+  .ministry-description,
+  .info-card p {
+    color: #cccccc;
+  }
+}

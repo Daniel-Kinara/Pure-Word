@@ -1,0 +1,150 @@
+.mission-page {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.mission-content {
+  background: var(--white);
+  border-radius: var(--border-radius);
+  padding: 3rem;
+  box-shadow: var(--shadow);
+  margin-top: -2rem;
+  position: relative;
+  z-index: 1;
+}
+
+.mission-statement {
+  text-align: center;
+  margin-bottom: 3rem;
+  padding-bottom: 3rem;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+.mission-icon {
+  font-size: 4rem;
+  color: var(--secondary-color);
+  margin-bottom: 1.5rem;
+}
+
+.mission-statement h2 {
+  color: var(--primary-color);
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+}
+
+.mission-text {
+  font-size: 1.3rem;
+  line-height: 1.8;
+  color: var(--text-color);
+  font-style: italic;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 1.5rem;
+  background: #f8f9fa;
+  border-radius: var(--border-radius);
+  border-left: 4px solid var(--secondary-color);
+}
+
+.mission-section {
+  margin-bottom: 3rem;
+}
+
+.mission-section h3 {
+  color: var(--primary-color);
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+.mission-section p {
+  line-height: 1.8;
+  color: var(--text-light);
+  margin-bottom: 1.5rem;
+}
+
+.mission-points {
+  display: grid;
+  gap: 1rem;
+}
+
+.mission-point {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1rem;
+  background: #f8f9fa;
+  border-radius: var(--border-radius);
+  border-left: 3px solid var(--secondary-color);
+}
+
+.check-icon {
+  color: var(--secondary-color);
+  font-size: 1.2rem;
+  margin-top: 0.25rem;
+  flex-shrink: 0;
+}
+
+.mission-point span {
+  line-height: 1.6;
+  color: var(--text-color);
+}
+
+.mission-practices {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.practice-card {
+  background: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: var(--border-radius);
+  border: 1px solid #e9ecef;
+}
+
+.practice-card h4 {
+  color: var(--primary-color);
+  margin-bottom: 0.75rem;
+  font-size: 1.1rem;
+}
+
+.practice-card p {
+  font-size: 0.95rem;
+  color: var(--text-light);
+  margin-bottom: 0;
+}
+
+.mission-call-to-action {
+  text-align: center;
+  padding: 2rem;
+  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+  border-radius: var(--border-radius);
+  margin-top: 2rem;
+}
+
+.mission-call-to-action h3 {
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.mission-call-to-action p {
+  margin-bottom: 1.5rem;
+  color: var(--text-light);
+}
+
+@media (max-width: 768px) {
+  .mission-content {
+    padding: 2rem;
+    margin-top: -1rem;
+  }
+  
+  .mission-text {
+    font-size: 1.1rem;
+    padding: 1rem;
+  }
+  
+  .mission-practices {
+    grid-template-columns: 1fr;
+  }
+}
